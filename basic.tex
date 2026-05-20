@@ -1,0 +1,58 @@
+% !TEX program = xelatex
+
+\documentclass{article}
+\usepackage{fontspec}
+\usepackage{arabxetex}
+\usepackage{tipa}
+\usepackage{wasysym}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{geometry}
+\geometry{margin=2cm}
+
+\newfontfamily\arabicfont[Script=Arabic]{Amiri}
+\newcommand{\ar}[1]{{\arabicfont #1}}
+
+\begin{document}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l c c c c c}
+\toprule
+\textbf{Name of Letter} & \textbf{Alone} & \textbf{Final} & \textbf{Medial} & \textbf{Initial} & \textbf{Trans-} \\
+                        & \textbf{Form}  & \textbf{Form}  & \textbf{Form}   & \textbf{Form}    & \textbf{scription} \\
+\midrule
+*\textit{'alif}           & \ar{ا}  & \ar{ـا}  & \ar{ـا}   & \ar{ا}   & ---         \\[4pt]
+\textit{b\={a}'}          & \ar{ب}  & \ar{ـب}  & \ar{ـبـ}  & \ar{بـ}  & $b$         \\[4pt]
+\textit{t\={a}'}          & \ar{ت}  & \ar{ـت}  & \ar{ـتـ}  & \ar{تـ}  & $t$         \\[4pt]
+\textit{\texttheta\={a}'} & \ar{ث}  & \ar{ـث}  & \ar{ـثـ}  & \ar{ثـ}  & \textipa{T} \\[4pt]
+\textit{j\={i}m}          & \ar{ج}  & \ar{ـج}  & \ar{ـجـ}  & \ar{جـ}  & $j$         \\[4pt]
+\textit{\d{h}\={a}'}      & \ar{ح}  & \ar{ـح}  & \ar{ـحـ}  & \ar{حـ}  & \d{h}       \\[4pt]
+\textit{x\={a}'}          & \ar{خ}  & \ar{ـخ}  & \ar{ـخـ}  & \ar{خـ}  & $x$         \\[4pt]
+*\textit{d\={a}l}         & \ar{د}  & \ar{ـد}  & \ar{ـد}   & \ar{د}   & $d$         \\[4pt]
+*\textit{\dh\={a}l}       & \ar{ذ}  & \ar{ـذ}  & \ar{ـذ}   & \ar{ذ}   & \dh         \\[4pt]
+*\textit{r\={a}'}         & \ar{ر}  & \ar{ـر}  & \ar{ـر}   & \ar{ر}   & $r$         \\[4pt]
+*\textit{z\={a}y}         & \ar{ز}  & \ar{ـز}  & \ar{ـز}   & \ar{ز}   & $z$         \\[4pt]
+\textit{s\={i}n}          & \ar{س}  & \ar{ـس}  & \ar{ـسـ}  & \ar{سـ}  & $s$         \\[4pt]
+\textit{\v{s}\={i}n}      & \ar{ش}  & \ar{ـش}  & \ar{ـشـ}  & \ar{شـ}  & \v{s}       \\[4pt]
+\textit{\d{s}\={a}d}      & \ar{ص}  & \ar{ـص}  & \ar{ـصـ}  & \ar{صـ}  & \d{s}       \\[4pt]
+\textit{\d{d}\={a}d}      & \ar{ض}  & \ar{ـض}  & \ar{ـضـ}  & \ar{ضـ}  & \d{d}       \\[4pt]
+\textit{\d{t}\={a}'}      & \ar{ط}  & \ar{ـط}  & \ar{ـطـ}  & \ar{طـ}  & \d{t}       \\[4pt]
+\textit{\d{z}\={a}'}      & \ar{ظ}  & \ar{ـظ}  & \ar{ـظـ}  & \ar{ظـ}  & \d{z}       \\[4pt]
+\textit{'ayn}             & \ar{ع}  & \ar{ـع}  & \ar{ـعـ}  & \ar{عـ}  & '           \\[4pt]
+\textit{\v{g}ayn}         & \ar{غ}  & \ar{ـغ}  & \ar{ـغـ}  & \ar{غـ}  & \v{g}       \\[4pt]
+\textit{f\={a}'}          & \ar{ف}  & \ar{ـف}  & \ar{ـفـ}  & \ar{فـ}  & $f$         \\[4pt]
+\textit{q\={a}f}          & \ar{ق}  & \ar{ـق}  & \ar{ـقـ}  & \ar{قـ}  & $q$         \\[4pt]
+\textit{k\={a}f}          & \ar{ك}  & \ar{ـك}  & \ar{ـكـ}  & \ar{كـ}  & $k$         \\[4pt]
+\textit{l\={a}m}          & \ar{ل}  & \ar{ـل}  & \ar{ـلـ}  & \ar{لـ}  & $l$         \\[4pt]
+\textit{m\={i}m}          & \ar{م}  & \ar{ـم}  & \ar{ـمـ}  & \ar{مـ}  & $m$         \\[4pt]
+\textit{n\={u}n}          & \ar{ن}  & \ar{ـن}  & \ar{ـنـ}  & \ar{نـ}  & $n$         \\[4pt]
+\textit{h\={a}'}          & \ar{ه}  & \ar{ـه}  & \ar{ـهـ}  & \ar{هـ}  & $h$         \\[4pt]
+*\textit{w\={a}w}         & \ar{و}  & \ar{ـو}  & \ar{ـو}   & \ar{و}   & $w$         \\[4pt]
+\textit{y\={a}'}          & \ar{ي}  & \ar{ـيـ} & \ar{ـيـ}  & \ar{يـ}  & $y$         \\[4pt]
+\bottomrule
+\end{tabular}
+\caption{Arabic Letter Forms}
+\end{table}
+
+\end{document}
