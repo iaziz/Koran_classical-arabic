@@ -1,0 +1,154 @@
+% !TEX program = xelatex
+
+\documentclass[11pt,a4paper]{article}
+\usepackage{geometry}
+\geometry{margin=2cm}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{fontspec}
+\usepackage{arabxetex}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+% Your System Font Pattern
+\newfontfamily\arabicfont[Script=Arabic]{Amiri}
+\newcommand{\ar}[1]{{\arabicfont #1}}
+
+% Design Formatting Elements
+\definecolor{primary}{HTML}{1A365D}
+\definecolor{secondary}{HTML}{2B6CB0}
+\definecolor{accent}{HTML}{C53030}
+
+\titleformat{\section}{\color{primary}\normalfont\large\bfseries}{\thesection}{1em}{}[{\titrule[0.8pt]}]
+\titleformat{\subsection}{\color{secondary}\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.8em}
+
+\begin{document}
+
+\begin{center}
+    {\color{primary}\LARGE\bfseries Comprehensive Reference: Arabic Case Endings} \\
+    \vspace{0.3cm}
+    {\color{secondary}\large A Structural Blueprint of Singular, Dual, and Broken Plural Forms} \\
+    \vspace{0.2cm}
+    \strut\hrule width \linewidth height 1.5pt \relax
+\end{center}
+
+\vspace{0.5cm}
+
+\section{The Core Principle of Arabic I'rāb (Vocalization)}
+In Classical and Quranic Arabic, the final vowel or letter configuration of a noun changes systematically depending on its structural role within a sentence:
+
+\begin{itemize}
+    \item \textbf{\color{primary}Nominative Case [ \ar{مَرْفُوع} -- Marfūʿ ]:} Typically marked by a \textbf{\color{primary}ḍamma [ \ar{ـُ} ]} on singular nouns. It indicates the Subject or Doer performing the action.
+    \item \textbf{\color{secondary}Accusative Case [ \ar{مَنْصُوب} -- Manṣūb ]:} Typically marked by a \textbf{\color{secondary}fatḥa [ \ar{ـَ} ]} on singular nouns. It identifies the Direct Object receiving the action.
+    \item \textbf{\color{accent}Genitive Case [ \ar{مَجْرُور} -- Majrūr ]:} Typically marked by a \textbf{\color{accent}kasra [ \ar{ـِ} ]} on singular nouns. It specifies possession or follows a grammatical preposition.
+\end{itemize}
+
+\section{Illustrative Sentences: The Three Primary Cases}
+
+\subsection{2.1 Nominative $\rightarrow$ The Doer}
+\textbf{Sentence Structure:} Verb + Doer + Object \\
+\textbf{Example Text:} \hfill {\Large \textarabic{خَلَقَ اللَّهُ الإِنْسَانَ}} \\
+\textbf{Transliteration:} \textit{Khalaqa Allāhu al-insāna} \\
+\textbf{Syntactic Breakdown:}
+\begin{itemize}
+    \item \textbf{Verb:} \textarabic{خَلَقَ} (\textit{Khalaqa}) $\rightarrow$ Created
+    \item \textbf{Doer / Subject:} \textarabic{اللَّهُ} (\textit{Allāhu}) $\rightarrow$ Marked by the final ḍamma
+    \item \textbf{Direct Object:} \textarabic{الإِنْسَانَ} (\textit{al-insāna}) $\rightarrow$ Mankind
+\end{itemize}
+\textbf{Translation:} ``Allah created mankind.''
+
+\subsection{2.2 Accusative $\rightarrow$ The Receiver}
+\textbf{Example Text:} \hfill {\Large \textarabic{نَصَرَ الرَّجُلُ يُوسُفَ}} \\
+\textbf{Transliteration:} \textit{Naṣara ar-rajulu Yūsufa} \\
+\textbf{Syntactic Breakdown:}
+\begin{itemize}
+    \item \textbf{Verb:} \textarabic{نَصَرَ} (\textit{Naṣara}) $\rightarrow$ Helped
+    \item \textbf{Doer / Subject:} \textarabic{الرَّجُلُ} (\textit{ar-rajulu}) $\rightarrow$ The man (Marked by ḍamma)
+    \item \textbf{Direct Object / Receiver:} \textarabic{يُوسُفَ} (\textit{Yūsufa}) $\rightarrow$ Joseph (Marked by the final fatḥa)
+\end{itemize}
+\textbf{Translation:} ``The man helped Joseph.''
+
+\subsection{2.3 Genitive $\rightarrow$ Possession or Prepositional Object}
+\textbf{Example A (Possession):} \hfill {\Large \textarabic{كِتَابُ الرَّجُلِ}} \\
+\textbf{Transliteration:} \textit{Kitābu ar-rajuli} \\
+\textbf{Meaning:} ``The man's book'' / ``The book of the man.'' (Marked by the final kasra)
+
+\textbf{Example B (After a Preposition):} \hfill {\Large \textarabic{ذَهَبْتُ إِلَى الْمَسْجِدِ}} \\
+\textbf{Transliteration:} \textit{Dhahabtu ilā al-masjidi} \\
+\textbf{Syntactic Breakdown:}
+\begin{itemize}
+    \item \textbf{Phrase:} \textarabic{ذَهَبْتُ} (\textit{Dhahabtu}) $\rightarrow$ I went
+    \item \textbf{Preposition:} \textarabic{إِلَى} (\textit{ilā}) $\rightarrow$ To
+    \item \textbf{Prepositional Object:} \textarabic{الْمَسْجِدِ} (\textit{al-masjidi}) $\rightarrow$ The mosque (Marked by the final kasra)
+\end{itemize}
+\textbf{Translation:} ``I went to the mosque.''
+
+\pagebreak
+
+\section{The Complete Declension Framework for the Root: \ar{ر - ج - ل}}
+\begin{table}[h!]
+\centering
+\small
+\renewcommand{\arraystretch{1.4}}
+\begin{tabular}{lllll}
+\toprule
+\textbf{\color{primary}Grammatical Number} & \textbf{\color{primary}Case} & \textbf{\color{primary}Arabic Form} & \textbf{\color{primary}Transliteration} & \textbf{\color{primary}Primary Syntactic Function} \\ 
+\midrule
+\textbf{Singular} & Nominative & {\Large \textarabic{الرَّجُلُ}} & \textit{ar-rajulu} & Sentence Subject / Doer \\
+(One Man) & Accusative & {\Large \textarabic{الرَّجُلَ}} & \textit{ar-rajula} & Direct Object / Receiver \\
+ & Genitive & {\Large \textarabic{الرَّجُلِ}} & \textit{ar-rajuli} & Post-Preposition / Possession \\ 
+\midrule
+\textbf{Dual} & Nominative & {\Large \textarabic{الرَّجُلَانِ}} & \textit{ar-rajulāni} & Sentence Subject / Doer \\
+(Two Men) & Accusative & {\Large \textarabic{الرَّجُلَيْنِ}} & \textit{ar-rajulayni} & Direct Object / Receiver \\
+ & Genitive & {\Large \textarabic{الرَّجُلَيْنِ}} & \textit{ar-rajulayni} & Post-Preposition / Possession \\ 
+\midrule
+\textbf{Broken Plural} & Nominative & {\Large \textarabic{الرِّجَالُ}} & \textit{ar-rijālu} & Sentence Subject / Doer \\
+(Three or More Men) & Accusative & {\Large \textarabic{الرِّجَالَ}} & \textit{ar-rijāla} & Direct Object / Receiver \\
+ & Genitive & {\Large \textarabic{الرِّجَالِ}} & \textit{ar-rijāli} & Post-Preposition / Possession \\ 
+\bottomrule
+\end{tabular}
+\caption{Systematic Declinational Blueprint of the Noun: \ar{رَجُل}}
+\end{table}
+
+\section{Structural Contrast: The Vowel Swap Experiment}
+Shifting the short vowels re-allocates semantic meaning entirely without modifying word order:
+
+\vspace{0.3cm}
+
+\begin{center}
+\begin{minipage}{0.48\textwidth}
+    \centering
+    \textbf{Historical Quranic Fact} \\[0.5em]
+    {\Large \textarabic{قَتَلَ دَاوُدُ جَالُوتَ}} \\[0.5em]
+    \small \textit{Qatala Dāwūdu Jālūta}
+    \begin{itemize}
+        \item[] \textarabic{دَاوُدُ} $\rightarrow$ The Doer / Subject (David / marked by ḍamma)
+        \item[] \textarabic{جَالُوتَ} $\rightarrow$ The Object (Goliath / marked by fatḥa)
+    \end{itemize}
+    \vspace{0.5em}
+    \textbf{Meaning:} ``David killed Goliath.''
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+    \centering
+    \textbf{Inverted Semantic Paradox} \\[0.5em]
+    {\Large \textarabic{قَتَلَ دَاوُدَ جَالُوتُ}} \\[0.5em]
+    \small \textit{Qatala Dāwūda Jālūtu}
+    \begin{itemize}
+        \item[] \textarabic{دَاوُدَ} $\rightarrow$ The Object (David / marked by fatḥa)
+        \item[] \textarabic{جَالُوتُ} $\rightarrow$ The Doer / Subject (Goliath / marked by ḍamma)
+    \end{itemize}
+    \vspace{0.5em}
+    \textbf{Meaning:} ``Goliath killed David.''
+\end{minipage}
+\end{center}
+
+\vspace{1.5cm}
+\begin{center}
+    \small\color{gray} This document serves as an analytical reference guide for Classical Arabic morphology and syntax grammar tracking.
+\end{center}
+
+\end{document}

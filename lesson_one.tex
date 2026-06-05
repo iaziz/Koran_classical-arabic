@@ -1,0 +1,134 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Package for proper bidirectional text layout
+\usepackage{fontspec}
+\usepackage{bidi} 
+
+\geometry{margin=1in}
+\setmainfont{Times New Roman}
+
+% Set up your Arabic font (Make sure Amiri or another Arabic font is installed on your system)
+\newfontfamily\arabicfont[Script=Arabic]{Amiri} 
+
+% Macro shortcut for inline Arabic text
+\newcommand{\arb}[1]{{\arabicfont\RL{#1}}}
+
+\title{\textbf{Lesson One: An Introduction to Koran and Classical Arabic}}
+\author{Wheeler M. Thackston}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{The Arabic Definite Article}
+
+The Arabic definite article is \textbf{alif-lam} (\arb{الـ}), which is the exact equivalent of the English word ``the''. 
+
+\subsection*{Key Characteristics:}
+\begin{itemize}
+    \item \textbf{Always attached directly} to the noun (it is never written as a separate word).
+    \item \textbf{Invariable}: It never changes its form based on the gender or number of the noun it modifies.
+\end{itemize}
+
+The 28 letters of the Arabic alphabet are divided evenly into two groups of 14 letters each based on how they phonetically interact with the definite article: \textbf{Moon Letters} (Non-Assimilating) and \textbf{Sun Letters} (Assimilating).
+
+\section*{The Alphabet}
+
+\begin{table}[h!]
+\centering
+\small
+\begin{tabular}{lcc}
+\toprule
+\textbf{Name of Letter} & \textbf{Alone Form} & \textbf{Transcription} \\ \midrule
+*'alif & \arb{ا} & \_ \\
+bā'    & \arb{ب} & b  \\
+tā'    & \arb{ت} & t  \\
+$\theta$ā' & \arb{ث} & $\theta$ \\
+jīm    & \arb{ج} & j  \\
+ḥā'    & \arb{ح} & ḥ  \\
+xā     & \arb{خ} & x  \\
+*dāl   & \arb{د} & d  \\
+*ðāl   & \arb{ذ} & ð  \\
+*rā'   & \arb{ر} & r  \\
+*zāy   & \arb{ز} & z  \\
+sīn    & \arb{س} & s  \\
+šīn    & \arb{ش} & š  \\
+ṣād    & \arb{ص} & ṣ  \\
+ḍād    & \arb{ض} & ḍ  \\
+ṭā'    & \arb{ط} & ṭ  \\
+ẓā'    & \arb{ظ} & ẓ  \\
+`ayn   & \arb{ع} & `  \\
+ğayn   & \arb{غ} & ğ  \\
+fā'    & \arb{ف} & f  \\
+qāf    & \arb{ق} & q  \\
+kāf    & \arb{ك} & k  \\
+lām    & \arb{ل} & l  \\
+mīm    & \arb{م} & m  \\
+nūn    & \arb{ن} & n  \\
+hā'    & \arb{ه} & h  \\
+*wāw   & \arb{و} & w  \\
+yā'    & \arb{ي} & y  \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\newpage
+
+\section*{1. Moon Letters (Non-Assimilating) --- 14 Letters}
+When the definite article precedes a Moon Letter, the \textit{lām} (\textit{l}) sound is fully and explicitly pronounced (\textit{al-}).
+
+\begin{table}[h!]
+\centering
+\small
+\begin{tabular}{cccllll}
+\toprule
+\textbf{\#} & \textbf{Arabic} & \textbf{Name} & \textbf{Trans.} & \textbf{Article} & \textbf{Example} & \textbf{Meaning} \\ \midrule
+1  & \arb{أ}  & *'alif & \_ & al-  & \arb{الأرض} (\textit{al-'arḍu})    & the earth \\
+2  & \arb{ب}  & bā'    & b  & al-  & \arb{البيت} (\textit{al-baytu})    & the house \\
+3  & \arb{ج}  & jīm    & j  & al-  & \arb{الجنة} (\textit{al-jannatu})  & paradise \\
+4  & \arb{ح}  & ḥā'    & ḥ  & al-  & \arb{الحليم} (\textit{al-ḥalīmu})  & the forbearing \\
+5  & \arb{خ}  & xā     & x  & al-  & \arb{الخبر} (\textit{al-xabaru})   & the news \\
+6  & \arb{ع}  & `ayn   & `  & al-  & \arb{العالم} (\textit{al-`ālamu})   & the world \\
+7  & \arb{غ}  & ğayn   & ğ  & al-  & \arb{الغيب} (\textit{al-ğaybu})   & the unseen \\
+8  & \arb{ف}  & fā'    & f  & al-  & \arb{الفجر} (\textit{al-fajru})    & the dawn \\
+9  & \arb{ق}  & qāf    & q  & al-  & \arb{القلب} (\textit{al-qalbu})    & the heart \\
+10 & \arb{ك}  & kāf    & k  & al-  & \arb{الكتاب} (\textit{al-kitābu})   & the book \\
+11 & \arb{م}  & mīm    & m  & al-  & \arb{الماء} (\textit{al-mā'u})     & the water \\
+12 & \arb{هـ} & hā'    & h  & al-  & \arb{الهواء} (\textit{al-hawā'u})   & the air \\
+13 & \arb{و}  & *wāw   & w  & al-  & \arb{الوقت} (\textit{al-waqtu})    & the time \\
+14 & \arb{ي}  & yā'    & y  & al-  & \arb{اليوم} (\textit{al-yawmu})    & the day \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\section*{2. Sun Letters (Assimilating) --- 14 Letters}
+When the definite article precedes a Sun Letter, the \textit{lām} sound is assimilated into the following letter, causing that letter to double phonetically (marked with a \textit{shaddah} in script).
+
+\begin{table}[h!]
+\centering
+\small
+\begin{tabular}{cccllll}
+\toprule
+\textbf{\#} & \textbf{Arabic} & \textbf{Name} & \textbf{Trans.} & \textbf{Article} & \textbf{Example} & \textbf{Meaning} \\ \midrule
+1  & \arb{ت}  & tā'    & t       & at-   & \arb{التين} (\textit{at-tīnu})     & the fig \\
+2  & \arb{ث}  & $\theta$ā' & $\theta$ & a$\theta$- & \arb{الثلج} (\textit{a$\theta$-$\theta$alju}) & the snow \\
+3  & \arb{د}  & *dāl   & d       & ad-   & \arb{الدين} (\textit{ad-dīnu})     & the religion \\
+4  & \arb{ذ}  & *ðāl   & ð       & að-   & \arb{الذهب} (\textit{að-ðahabu})   & the gold \\
+5  & \arb{ر}  & *rā'   & r       & ar-   & \arb{الرجل} (\textit{ar-rajulu})   & the man \\
+6  & \arb{ز}  & *zāy   & z       & az-   & \arb{الزمان} (\textit{az-zamānu})   & the time \\
+7  & \arb{س}  & sīn    & s       & as-   & \arb{السماء} (\textit{as-samā'u})   & the sky \\
+8  & \arb{ش}  & šīn    & š       & aš-   & \arb{الشمس} (\textit{aš-šamsu})   & the sun \\
+9  & \arb{ص}  & ṣād    & ṣ       & aṣ-   & \arb{الصبر} (\textit{aṣ-ṣabru})    & the patience \\
+10 & \arb{ض}  & ḍād    & ḍ       & aḍ-   & \arb{الضوء} (\textit{aḍ-ḍaw'u})    & the light \\
+11 & \arb{ط}  & ṭā'    & ṭ       & aṭ-   & \arb{الطريق} (\textit{aṭ-ṭarīqu})   & the road \\
+12 & \arb{ظ}  & ẓā'    & ẓ       & az-   & \arb{الظلم} (\textit{aẓ-target})   & the injustice \\
+13 & \arb{ل}  & lām    & l       & al-   & \arb{الليل} (\textit{al-laylu})     & the night \\
+14 & \arb{ن}  & nūn    & n       & an-   & \arb{النجم} (\textit{an-najmu})    & the star \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}
